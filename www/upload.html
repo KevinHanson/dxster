@@ -50,12 +50,39 @@ var fileInput = document.getElementById("csv"),
             // By lines
             document.getElementById('out').innerHTML = "test";
             var lines_str = '';
+            //var cntr = 0;
+            var algdx = '';
             var lines = this.result.split('\n');
+
             for(var line = 0; line < lines.length; line++){
               //console.log(lines[line]);
 
-              lines_str = lines_str + lines[line] + '<br>';
 
+
+                var items = lines[line].split(',');
+                console.log('subject_id= ' + items[0]);
+                console.log('npdx= ' +items[1]);
+                console.log('cdr_sb= ' + items[2]);
+                algdx = DxsterCalcModule.calculate(items[2],items[1])
+                console.log('algdx= ' + algdx);
+
+
+                lines_str = lines_str + lines[line] + ' ,' + algdx + '<br>';
+                // for ( var item = 0; item < items.length; item++){
+                //
+                //   //console.log(items[item]);
+                //   console.log('subject_id= ' + items[0]);
+                //   console.log('npdx= ' +items[1]);
+                //   console.log('cdr_sb= ' + items[2]);
+                //   console.log('algdx= TODO');
+                //
+                //
+                //
+                //   //if its the first line the columns npdx and cdr_sb will
+                //   // be present at index location 1 & 2
+                //   cntr = cntr + 1;
+                //   console.log('cntr= ' + cntr);
+                // }
 
             }
             document.getElementById('out').innerHTML = lines_str
@@ -89,8 +116,8 @@ fileInput.addEventListener('change', readFile);
 
 var algdx = (
   DxsterCalcModule.calculate(
-    document.getElementById("CDR_sb").value,
-    document.getElementById("NPDx").value
+    //document.getElementById("CDR_sb").value,
+    //document.getElementById("NPDx").value
   )
 )
 
