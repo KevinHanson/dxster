@@ -1,48 +1,35 @@
-![alt tag](https://raw.github.com/dogfalo/materialize/master/images/materialize.gif)
-===========
+```
+   _____        _____ _            
+  |  __ \      / ____| |           
+  | |  | |_  __ (___ | |_ ___ _ __
+  | |  | \ \/ /\___ \| __/ _ \ '__|
+  | |__| |>  < ____) | |_  __/ |   
+  |_____//_/\_\_____/ \__\___|_|
 
-[![Travis CI](https://travis-ci.org/Dogfalo/materialize.svg?branch=master)](https://travis-ci.org/Dogfalo/materialize)[![devDependency Status](https://david-dm.org/Dogfalo/materialize/dev-status.svg)](https://david-dm.org/Dogfalo/materialize#info=devDependencies)[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Dogfalo/materialize?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+```
+# dxster
 
-[Materialize](http://materializecss.com/), a CSS Framework based on material design
+DxSter, the Alzheimer's Algorithmic Diagnostic Helper.
 
-### Current Version : v0.97.7
+The DxSter module takes a Clincal  diagnosis (PhyDx) and the Neurophyscological diagnosis (NpDx) to output the algorithmic diagnosis (AlgDx). The idea is that the AlgDx saves time to formulate a diagnosis of an ALZ patient but reducing the need for consensus conferences.
 
-## Sass Requirements:
-- Ruby Sass 3.3+, LibSass 0.6+
+#Support
+This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266.
 
-## Supported Browsers:
-Chrome 35+, Firefox 31+, Safari 7+, IE 10+
+#Cite Us
+Please reference Clinical and Translational Science - Informatics and Technology group (CTS-IT) in any research report, journal, or publication that requires citation of authors' work. Recognition of CTS-IT resources you used to perform research is important for acquiring funding for the next generation of informatics services and our research and development activities in software development and information science.
 
-## Changelog
-- v0.97.7 (July 23rd)
-  - Basic horizontal cards
-  - Carousel bug fixes and new features
-  - Updated sidenav styles and new component
-  - Meteor package now supports Sass
-  - Autocomplete form component
-  - Chips jQuery plugin
-- v0.97.6 (April 1st)
-  - **Removed deprecated material icons from project**
-  - **Changed /font directory to /fonts**
-  - Datepicker and ScrollSpy now compatible with jQuery 2.2.x
-  - Responsive tables now work with empty cells
-  - Added focus states to checkboxes, switches, and radio buttons
-  - Sidenav and Modals no longer cause flicker with scrollbar
-  - Materialbox overflow and z-index issues fixed
-  - Added new option for Card actions within a Card reveal
-- v0.97.5 (Dec 21, 2015)
-  - Fixed Meteor package crash
-- v0.97.4 (Dec 20, 2015)
-  - Added Jasmine testing with Travis CI
-  - Select bugfixes
-  - Grid Offset bugfix
-  - Dropdown overflow bugfix
-  - Range slider error bugfix
+At minimum, a citation should include: Clinical and Translational Science Informatics and Technology group at the University of Florida
 
+Our suggested acknowledgement is (select one or more items within the braces, as appropriate): The authors acknowledge the Clinical and Translational Science Informatics and Technology group at the University of Florida for providing {Python software library, code, examples, calculator} resources that have contributed to the research results reported within this paper. URL: http://www.ncbi.nlm.nih.gov/pubmed/20306566
 
+#Examples
 
-## Contributing
-[Please read CONTRIBUTING.md for more information](CONTRIBUTING.md)
+## Bash & Python with CSV test data set script example
+In the examples/bash folder in the GitHub repository are example files of a sample csv dataset called sample_data.csv that contains a subject ID, NPDx, and CDR score. The file calc_algdx_sample.sh will call Python and the dxster python module to loop through every row in your sample data and output the AlgDx corresponding diagnosis to stdout.
 
-## Testing
-We use Jasmine as our testing framework and we're trying to write a robust test suite for our components. If you want to help, [here's a starting guide on how to write tests in Jasmine](https://docs.google.com/document/d/1dVM6qGt_b_y9RRhr9X7oZfFydaJIEqB9CT7yekv-4XE/edit?usp=sharing)
+## HTML & Javascript Implementation: DxSter Calculator
+Go to DxCalc (https://cts-it.github.io/dxster/) and view page source to see an example implementation of the dxster.js JavaScript AlgDx Module. This module is a port of the Python library. It implements the identical AlgDx truth table and AlgDx calc functions. dxcalc.html serves as a reference implementation of this functionality.
+
+#Literature cited.
+Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18(4), 363–370.http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2844658/
