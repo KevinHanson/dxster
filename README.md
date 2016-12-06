@@ -20,10 +20,9 @@ The DxSter module takes a Clincal  diagnosis (PhyDx) and the Neurophyscological 
 #Support
 This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266.
 
-<<<<<<< HEAD
-[![DOI](https://zenodo.org/badge/4064/ctsit/dxster.svg)](https://zenodo.org/badge/latestdoi/4064/ctsit/dxster)
 
-=======
+
+
 #Cite Us
 Please reference Clinical and Translational Science - Informatics and Technology group (CTS-IT) in any research report, journal, or publication that requires citation of authors' work. Recognition of CTS-IT resources you used to perform research is important for acquiring funding for the next generation of informatics services and our research and development activities in software development and information science.
 
